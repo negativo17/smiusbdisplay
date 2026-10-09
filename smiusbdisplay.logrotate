@@ -1,0 +1,6 @@
+/var/log/SMIUSBDisplay/*log {
+	missingok
+	notifempty
+	compress
+	delaycompress
+}

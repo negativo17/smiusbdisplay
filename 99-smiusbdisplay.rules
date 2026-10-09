@@ -1,0 +1,3 @@
+# Vendor 090c also makes storage controllers, match only the display adapters (IAD class)
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="090c", ATTR{bDeviceClass}=="ef", TAG+="systemd", ENV{SYSTEMD_WANTS}+="smiusbdisplay.service"
+ACTION=="remove", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ENV{PRODUCT}=="90c/*", ENV{TYPE}=="239/*", RUN+="/usr/bin/systemctl --no-block stop smiusbdisplay.service"

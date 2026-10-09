@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="driver">
+  <id>com.siliconmotion.smiusbdisplay</id>
+  <name>Silicon Motion USB Display</name>
+  <summary>Driver for Silicon Motion SM76x and SM77x USB docking stations and display adapters</summary>
+  <developer id="com.siliconmotion">
+    <name>Silicon Motion Technology Corporation</name>
+  </developer>
+  <!-- appstream-builder drops <developer> from the repository catalog -->
+  <developer_name>Silicon Motion Technology Corporation</developer_name>
+  <icon type="local">/usr/share/pixmaps/com.siliconmotion.smiusbdisplay.png</icon>
+  <description>
+    <p>This adds support for HDMI, DisplayPort and VGA outputs on devices built upon the Silicon Motion SM76x and SM77x series of USB display controllers. This includes numerous docking stations, USB monitors and USB display adapters.</p>
+  </description>
+  <keywords>
+    <keyword>DisplayPort</keyword>
+    <keyword>HDMI</keyword>
+    <keyword>InstantView</keyword>
+    <keyword>Monitor</keyword>
+    <keyword>Silicon Motion</keyword>
+    <keyword>SM768</keyword>
+    <keyword>SM770</keyword>
+    <keyword>USB</keyword>
+    <keyword>VGA</keyword>
+    <keyword>dock</keyword>
+    <keyword>docking station</keyword>
+    <keyword>driver</keyword>
+  </keywords>
+  <provides>
+    <modalias>usb:v090Cp*d*dcEF*</modalias>
+  </provides>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>BSD-3-Clause</project_license>
+  <url type="homepage">https://www.siliconmotion.com/downloads/SM770-drivers.html</url>
+  <update_contact>negativo17@gmail.com</update_contact>
+</component>

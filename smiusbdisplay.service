@@ -1,0 +1,14 @@
+[Unit]
+Description=Silicon Motion USB Display Manager Service
+After=display-manager.service
+Conflicts=getty@tty7.service
+
+[Service]
+ExecStartPre=/sbin/modprobe evdi
+ExecStart=/usr/libexec/smiusbdisplay/SMIUSBDisplayManager
+Restart=always
+WorkingDirectory=/usr/libexec/smiusbdisplay
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
